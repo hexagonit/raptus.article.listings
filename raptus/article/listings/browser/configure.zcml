@@ -1,0 +1,27 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:article="http://namespaces.zope.org/article"
+    i18n_domain="raptus.article">
+
+    <article:component
+        name="listing.left"
+        component=".listing.ComponentLeft"
+        selection="raptus.article.core.interfaces.IArticle"
+        viewlet=".listing.ViewletLeft"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContentBody" />
+
+    <article:component
+        name="listing.right"
+        component=".listing.ComponentRight"
+        selection="raptus.article.core.interfaces.IArticle"
+        viewlet=".listing.ViewletRight"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContentBody" />
+
+    <article:component
+        name="listing.columns"
+        component=".listing.ComponentColumns"
+        selection="raptus.article.core.interfaces.IArticle"
+        viewlet=".listing.ViewletColumns"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContentBody" />
+
+</configure>

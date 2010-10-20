@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<metadata>
+  <version>2.0b3</version>
+  <dependencies>
+    <dependency>profile-raptus.article.core:default</dependency>
+    <dependency>profile-raptus.article.nesting:default</dependency>
+  </dependencies>
+</metadata>

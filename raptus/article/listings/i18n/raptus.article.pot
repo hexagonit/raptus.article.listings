@@ -1,0 +1,43 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2010-01-19 12:35+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: raptus.article\n"
+
+#: raptus.article.listings/raptus/article/listings/browser/listing.py:146
+msgid "List of the contained articles arranged in columns."
+msgstr ""
+
+#: raptus.article.listings/raptus/article/listings/browser/listing.py:38
+msgid "List of the contained articles with their image on the left side."
+msgstr ""
+
+#: raptus.article.listings/raptus/article/listings/browser/listing.py:119
+msgid "List of the contained articles with their image on the right side."
+msgstr ""
+
+#: raptus.article.listings/raptus/article/listings/browser/listing.py:145
+msgid "Listing columns"
+msgstr ""
+
+#: raptus.article.listings/raptus/article/listings/browser/listing.py:37
+msgid "Listing left"
+msgstr ""
+
+#: raptus.article.listings/raptus/article/listings/browser/listing.py:118
+msgid "Listing right"
+msgstr ""
+

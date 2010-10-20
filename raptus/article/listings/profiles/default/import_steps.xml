@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="raptus.article.listings" version="20100121-01"
+               handler="raptus.article.listings.setuphandlers.installDependencies"
+               title="raptus.article.listings install">
+   Installs dependencies of raptus.article.listings
+  </import-step>
+</import-steps>

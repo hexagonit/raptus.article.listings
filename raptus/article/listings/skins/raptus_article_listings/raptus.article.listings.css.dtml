@@ -1,0 +1,112 @@
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+/* <dtml-call "REQUEST.set('columns_height', portal_properties.raptus_article.teaser_listingcolumns_height)"> (not this either :) */
+/* <dtml-call "REQUEST.set('columns_width', portal_properties.raptus_article.teaser_listingcolumns_width)"> (not this either :) */
+/* <dtml-call "REQUEST.set('left_height', portal_properties.raptus_article.teaser_listingleft_height)"> (not this either :) */
+/* <dtml-call "REQUEST.set('left_width', portal_properties.raptus_article.teaser_listingleft_width)"> (not this either :) */
+/* <dtml-call "REQUEST.set('right_height', portal_properties.raptus_article.teaser_listingright_height)"> (not this either :) */
+/* <dtml-call "REQUEST.set('right_width', portal_properties.raptus_article.teaser_listingright_width)"> (not this either :) */
+/* <dtml-call "REQUEST.set('columns_crop_height', portal_properties.raptus_article.listings_columns_cropheight)"> (not this either :) */
+/* <dtml-call "REQUEST.set('columns_crop_width', portal_properties.raptus_article.listings_columns_cropwidth)"> (not this either :) */
+/* <dtml-call "REQUEST.set('left_crop_height', portal_properties.raptus_article.listings_left_cropheight)"> (not this either :) */
+/* <dtml-call "REQUEST.set('left_crop_width', portal_properties.raptus_article.listings_left_cropwidth)"> (not this either :) */
+/* <dtml-call "REQUEST.set('right_crop_height', portal_properties.raptus_article.listings_right_cropheight)"> (not this either :) */
+/* <dtml-call "REQUEST.set('right_crop_width', portal_properties.raptus_article.listings_right_cropwidth)"> (not this either :) */
+
+ul.listing {
+  clear:both;
+  margin:3em 0;
+  line-height:1.5em;
+  font-size:0.9em;
+}
+
+ul.listing h2 {
+  border:none;
+  margin-top:0;
+  font-size:1.3em;
+}
+
+ul.listing .component {
+  margin-bottom:0;
+}
+
+ul.listing li .component {
+  background-color:transparent;
+}
+
+ul.listing li .component a,
+ul.listing li .component span {
+  display:block;
+  overflow:hidden;
+  float:left;
+  position:relative;
+}
+
+ul.listing li .component a img,
+ul.listing li .component span img {
+  display:block;
+}
+
+ul.listing li {
+  overflow:hidden;
+  border-bottom:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+  padding:1em;
+  margin:0;
+}
+
+ul.listing-left li .component a,
+ul.listing-left li .component span {
+  <dtml-if expr="left_crop_width > 0">
+  width:&dtml-left_crop_width;px;
+  </dtml-if>
+  <dtml-if expr="left_crop_height > 0">
+  height:&dtml-left_crop_height;px;
+  </dtml-if>
+}
+
+ul.listing-right li .component a,
+ul.listing-right li .component span {
+  <dtml-if expr="right_crop_width > 0">
+  width:&dtml-right_crop_width;px;
+  </dtml-if>
+  <dtml-if expr="right_crop_height > 0">
+  height:&dtml-right_crop_height;px;
+  </dtml-if>
+}
+
+ul.listing-columns {
+  overflow:hidden;
+}
+
+ul.listing-columns li .component a,
+ul.listing-columns li .component span {
+  <dtml-if expr="columns_crop_width > 0">
+  width:&dtml-columns_crop_width;px;
+  </dtml-if>
+  <dtml-if expr="columns_crop_height > 0">
+  height:&dtml-columns_crop_height;px;
+  </dtml-if>
+}
+
+ul.listing-columns li {
+  float:left;
+  width:&dtml-columns_width;px;
+  border-bottom:0;
+  margin-right:2em;
+  padding:0;
+  background-color:transparent;
+}
+
+ul.listing-columns .first {
+  clear:both;
+}
+
+ul.listing-columns .last {
+  margin-right:0;
+}
+
+ul.listing-columns .component {
+  margin-bottom:0.5em;
+}
+
+/* </dtml-with> */
