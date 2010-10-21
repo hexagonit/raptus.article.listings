@@ -5,13 +5,14 @@ Provides basic listing components which display articles contained in the articl
 
 The following features for raptus.article are provided by this package:
 
-    * Components:
-        * Listing columns (List of the contained articles arranged in columns.)
-        * Listing left (List of the contained articles with their image on the left side.)
-        * Listing right (List of the contained articles with their image on the right side.)
+Components
+----------
+    * Listing columns (List of the contained articles arranged in columns.)
+    * Listing left (List of the contained articles with their image on the left side.)
+    * Listing right (List of the contained articles with their image on the right side.)
 
-Dependencies:
-
+Dependencies
+------------
     * raptus.article.nesting
 
 Installation
@@ -58,7 +59,5 @@ in the article in which this component is active.
 Copyright and credits
 =====================
 
-raptus.article is copyrighted by raptus_, and licensed under the GPL. 
+raptus.article is copyrighted by `Raptus AG <http://raptus.com>`_ and licensed under the GPL. 
 See LICENSE.txt for details.
-
-.. _raptus: http://raptus.com/ 

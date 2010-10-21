@@ -10,8 +10,9 @@ Code overview
 
 Components
 ----------
-plone.belowcontentbody:
 
+plone.belowcontentbody
+``````````````````````
 - raptus.article.listing.right
 - raptus.article.listing.left
 - raptus.article.listing.columns
