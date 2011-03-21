@@ -6,6 +6,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.layout.viewlets.common import ViewletBase
 from plone.memoize.instance import memoize
 
+from raptus.article.core.config import MANAGE_PERMISSION
 from raptus.article.core import RaptusArticleMessageFactory as _
 from raptus.article.core import interfaces
 from raptus.article.nesting.interfaces import IArticles
@@ -80,7 +81,12 @@ class ViewletLeft(ViewletBase):
     def articles(self):
         provider = IArticles(self.context)
         manageable = interfaces.IManageable(self.context)
-        items = manageable.getList(provider.getArticles(component=self.component), self.component)
+        mship = getToolByName(self.context, 'portal_membership')
+        if mship.checkPermission(MANAGE_PERMISSION, self.context):
+            items = provider.getArticles()
+        else:
+            items = provider.getArticles(component=self.component)
+        items = manageable.getList(items, self.component)
         i = 0
         l = len(items)
         for item in items:
@@ -88,6 +94,8 @@ class ViewletLeft(ViewletBase):
                          'description': item['brain'].Description,
                          'url': item['brain'].hasDetail and item['brain'].getURL() or None,
                          'class': self._class(item['brain'], i, l)})
+            if item.has_key('show') and item['show']:
+                item['class'] += ' hidden'
             if REFERENCE:
                 reference = IReference(item['obj'])
                 url = reference.getReferenceURL()
