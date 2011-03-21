@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.0b7 (2010-03-21)
+------------------
+
+* Now using the show/hide functionality added in raptus.article.core 2.0b8
+
 2.0b6 (2010-11-10)
 ------------------
 
